@@ -1,0 +1,36 @@
+.wrap {
+    width: 100%;
+    max-width: 15rem;
+    background: linear-gradient(135deg, black, snow, grey);
+    color: black;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.5s ease;
+    text-align: center;
+}
+
+.wrap:hover {
+    background: linear-gradient(135deg, grey, snow, black);
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        max-width: 10rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap {
+        max-width: 8rem;
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}

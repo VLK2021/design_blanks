@@ -1,0 +1,20 @@
+.wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 20%;
+}
+
+.nav {
+    width: 70%;
+}
+
+.sign {
+    width: 10%;
+}
