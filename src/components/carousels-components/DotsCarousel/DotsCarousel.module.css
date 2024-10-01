@@ -1,0 +1,124 @@
+.wrap {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.carouselInner {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.blockHr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.hr {
+    width: 4rem;
+    border: none;
+    border-top: 2px solid black;
+}
+
+.iconCarousel {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.carouselTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.carouselDescription {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.blockBtn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.prevButton, .nextButton {
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.prevButton {
+    left: 3rem;
+}
+
+.nextButton {
+    right: 3rem;
+}
+
+.carouselDots {
+    position: absolute;
+    bottom: 3rem;
+    left: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.activeDot {
+    background-color: #333;
+}

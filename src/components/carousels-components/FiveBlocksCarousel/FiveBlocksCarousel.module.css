@@ -1,0 +1,98 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blockBtn {
+    position: absolute;
+    padding: 0 1rem;
+    width: 100%;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+}
+
+.icon {
+    font-size: 2.5rem;
+    background: transparent;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+    color: #3498db; /* Змінив колір на насичений синій */
+}
+
+.icon:hover {
+    color: #f39c12; /* Помаранчевий колір при наведенні */
+    transform: rotate(360deg); /* Плавне обертання іконки */
+}
+
+.trackContainer {
+    display: flex;
+    width: 100%;
+}
+
+.track {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0;
+}
+
+.slide {
+    min-width: 20%;
+    height: 20rem;
+    position: relative;
+    transition: filter 0.5s ease;
+    overflow: hidden;
+    border-radius: 10px; /* Додаємо закруглені кути для більш сучасного вигляду */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Легка тінь для слайдів */
+}
+
+.slide:hover {
+    filter: brightness(85%); /* Зменшення яскравості зображення при наведенні */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill; /* Краще підходить для відображення зображень */
+    border-radius: 10px; /* Закруглені кути для зображень */
+}
+
+.info {
+    position: absolute;
+    bottom: -100%; /* Початкове положення тексту поза видимою областю */
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, #ff6f61, #ffcc33); /* Градієнт для фону тексту */
+    transition: bottom 0.5s ease; /* Плавний підйом тексту */
+    padding: 15px; /* Більше відступів для кращого вигляду */
+    border-radius: 0 0 10px 10px; /* Закруглення нижніх кутів блоку з текстом */
+    font-family: 'Arial', sans-serif; /* Стильний шрифт */
+    font-size: 1rem; /* Оптимальний розмір тексту */
+}
+
+.slide:hover .info {
+    bottom: 0; /* Текст піднімається у видиму область */
+}
+
+.blockBtn button{
+    border: none;
+    background: transparent;
+}
